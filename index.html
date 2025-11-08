@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesticide Suggestor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌾 Pesticide Suggestor</h1>
+    <p>Find the best pesticide based on your crop and pest type.</p>
+  </header>
+
+  <main>
+    <form id="pesticide-form">
+      <label for="crop">Select Crop:</label>
+      <select id="crop" required>
+        <option value="">-- Choose Crop --</option>
+        <option value="wheat">Wheat</option>
+        <option value="rice">Rice</option>
+        <option value="cotton">Cotton</option>
+        <option value="tomato">Tomato</option>
+      </select>
+
+      <label for="pest">Select Pest Type:</label>
+      <select id="pest" required>
+        <option value="">-- Choose Pest --</option>
+        <option value="aphids">Aphids</option>
+        <option value="bollworm">Bollworm</option>
+        <option value="stem-borer">Stem Borer</option>
+        <option value="whitefly">Whitefly</option>
+      </select>
+
+      <label for="location">Enter Location:</label>
+      <input type="text" id="location" placeholder="e.g., Punjab, India" required>
+
+      <button type="submit">Suggest Pesticide</button>
+    </form>
+
+    <section id="result" class="hidden">
+      <h2>Suggested Pesticide</h2>
+      <p id="suggestion-text"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Pesticide Suggestor | Built with ❤️ for Farmers</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
